@@ -10,4 +10,11 @@
 
 @interface PKLoginWeiView : UIView
 
+@property (strong, nonatomic) UILabel               * xianLabel;
+@property (strong, nonatomic) UILabel               * hezuoLabel;
+@property (strong, nonatomic) UIButton              * xinlangBtn;
+@property (strong, nonatomic) UIButton              * renrenBtn;
+@property (strong, nonatomic) UIButton              * doubanBtn;
+@property (strong, nonatomic) UIButton              * qqBtn;
+
 @end

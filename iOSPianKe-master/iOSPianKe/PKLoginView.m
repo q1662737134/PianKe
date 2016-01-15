@@ -15,9 +15,60 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        [self addSubview:self.zhanghaoLbl];
+        [self addSubview:self.MimaLbl];
+        [self addSubview:self.zhanghaoText];
+        [self addSubview:self.mimaText];
+        [self addSubview:self.xianLbl1];
+        [self addSubview:self.xianLbl2];
+        [self addSubview:self.loginBtn];
+        [self PKLoginViewLayout];
     }
     return self;
+}
+
+- (void)PKLoginViewLayout{
+    WS(ws);
+    [_zhanghaoLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(CGSizeMake(45, 20));
+        make.top.equalTo(ws.mas_top);
+        make.left.equalTo(ws.mas_left).offset(30);
+    }];
+    [_MimaLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(CGSizeMake(45, 20));
+        make.top.equalTo(ws.zhanghaoLbl.mas_bottom).offset(40);
+        make.left.equalTo(ws.mas_left).offset(30);
+    }];
+    [_zhanghaoText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(ws.zhanghaoLbl.mas_centerY);
+        make.left.equalTo(ws.zhanghaoLbl.mas_right);
+        make.right.equalTo(ws.mas_right).offset(-30);
+        make.height.equalTo(@20);
+    }];
+    [_mimaText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(ws.MimaLbl.mas_centerY);
+        make.left.equalTo(ws.zhanghaoText.mas_left);
+        make.width.equalTo(ws.zhanghaoText.mas_width);
+        make.height.equalTo(ws.zhanghaoText.mas_height);
+    }];
+    [_xianLbl1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(@1);
+        make.top.equalTo(ws.zhanghaoLbl.mas_bottom).offset(5);
+        make.left.equalTo(ws.mas_left).offset(30);
+        make.right.equalTo(ws.mas_right).offset(-30);
+    }];
+    [_xianLbl2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(@1);
+        make.top.equalTo(ws.MimaLbl.mas_bottom).offset(5);
+        make.left.equalTo(ws.xianLbl1.mas_left);
+        make.width.equalTo(ws.xianLbl1.mas_width);
+    }];
+    [_loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.xianLbl2.mas_bottom).offset(30);
+        make.left.equalTo(ws.mas_left).offset(30);
+        make.width.equalTo(ws.xianLbl1);
+        make.height.equalTo(@30);
+    }];
 }
 
 - (UILabel *)xianLbl1{
@@ -73,6 +124,11 @@
 - (UIButton *)loginBtn{
     if (!_loginBtn) {
         _loginBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        _loginBtn.backgroundColor = RGB(92, 191, 65);
+        [_loginBtn setTitle:@"登录" forState:(UIControlStateNormal)
+         ];
+        [_loginBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+        _loginBtn.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     }
     return _loginBtn;
 }

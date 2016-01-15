@@ -17,6 +17,11 @@
 		043C7F941C48D17700B7DE5A /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F931C48D17700B7DE5A /* PKLoginViewController.m */; };
 		043C7F981C48D1E100B7DE5A /* PKLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F971C48D1E100B7DE5A /* PKLoginView.m */; };
 		043C7F9E1C48D68500B7DE5A /* PKLoginWeiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */; };
+		04A2F7521C49261D0064DB98 /* PKLoginHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F7511C49261D0064DB98 /* PKLoginHeadView.m */; };
+		04A2F7561C49325E0064DB98 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F7551C49325E0064DB98 /* RegisterViewController.m */; };
+		04A2F7591C4933040064DB98 /* RegisterTouView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F7581C4933040064DB98 /* RegisterTouView.m */; };
+		04A2F75D1C49332C0064DB98 /* RegisterZhongView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F75C1C49332C0064DB98 /* RegisterZhongView.m */; };
+		04A2F7601C49333C0064DB98 /* RegisterWeiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F75F1C49333C0064DB98 /* RegisterWeiView.m */; };
 		60BB1D961C473118007D8F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB1D951C473118007D8F51 /* main.m */; };
 		60BB1D991C473118007D8F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB1D981C473118007D8F51 /* AppDelegate.m */; };
 		60BB1D9F1C473118007D8F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BB1D9D1C473118007D8F51 /* Main.storyboard */; };
@@ -145,6 +150,16 @@
 		043C7F971C48D1E100B7DE5A /* PKLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginView.m; sourceTree = "<group>"; };
 		043C7F9C1C48D68500B7DE5A /* PKLoginWeiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKLoginWeiView.h; path = ../PKLoginWeiView.h; sourceTree = "<group>"; };
 		043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKLoginWeiView.m; path = ../PKLoginWeiView.m; sourceTree = "<group>"; };
+		04A2F7501C49261D0064DB98 /* PKLoginHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLoginHeadView.h; sourceTree = "<group>"; };
+		04A2F7511C49261D0064DB98 /* PKLoginHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginHeadView.m; sourceTree = "<group>"; };
+		04A2F7541C49325E0064DB98 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		04A2F7551C49325E0064DB98 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		04A2F7571C4933040064DB98 /* RegisterTouView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTouView.h; sourceTree = "<group>"; };
+		04A2F7581C4933040064DB98 /* RegisterTouView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTouView.m; sourceTree = "<group>"; };
+		04A2F75B1C49332C0064DB98 /* RegisterZhongView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterZhongView.h; sourceTree = "<group>"; };
+		04A2F75C1C49332C0064DB98 /* RegisterZhongView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterZhongView.m; sourceTree = "<group>"; };
+		04A2F75E1C49333C0064DB98 /* RegisterWeiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterWeiView.h; sourceTree = "<group>"; };
+		04A2F75F1C49333C0064DB98 /* RegisterWeiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterWeiView.m; sourceTree = "<group>"; };
 		60BB1D911C473118007D8F51 /* iOSPianKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPianKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BB1D951C473118007D8F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60BB1D971C473118007D8F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -421,6 +436,31 @@
 				043C7F971C48D1E100B7DE5A /* PKLoginView.m */,
 				043C7F9C1C48D68500B7DE5A /* PKLoginWeiView.h */,
 				043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */,
+				04A2F7501C49261D0064DB98 /* PKLoginHeadView.h */,
+				04A2F7511C49261D0064DB98 /* PKLoginHeadView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		04A2F7531C4931E30064DB98 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				04A2F7541C49325E0064DB98 /* RegisterViewController.h */,
+				04A2F7551C49325E0064DB98 /* RegisterViewController.m */,
+				04A2F75A1C49330C0064DB98 /* view */,
+			);
+			name = "注册";
+			sourceTree = "<group>";
+		};
+		04A2F75A1C49330C0064DB98 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04A2F7571C4933040064DB98 /* RegisterTouView.h */,
+				04A2F7581C4933040064DB98 /* RegisterTouView.m */,
+				04A2F75B1C49332C0064DB98 /* RegisterZhongView.h */,
+				04A2F75C1C49332C0064DB98 /* RegisterZhongView.m */,
+				04A2F75E1C49333C0064DB98 /* RegisterWeiView.h */,
+				04A2F75F1C49333C0064DB98 /* RegisterWeiView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -448,10 +488,11 @@
 		60BB1D931C473118007D8F51 /* iOSPianKe */ = {
 			isa = PBXGroup;
 			children = (
+				04A2F7531C4931E30064DB98 /* 注册 */,
 				043C7F911C48D13600B7DE5A /* 登录 */,
-				043C7F8F1C48C7F300B7DE5A /* other */,
-				043C7F7A1C47768A00B7DE5A /* 首页 */,
 				043C7F761C4775A600B7DE5A /* 左侧菜单 */,
+				043C7F7A1C47768A00B7DE5A /* 首页 */,
+				043C7F8F1C48C7F300B7DE5A /* other */,
 				60BB1EBD1C473685007D8F51 /* 工具类 */,
 				60BB1EB51C4733EF007D8F51 /* 基类 */,
 				60BB1DCD1C4733A9007D8F51 /* 开源库 */,
@@ -925,6 +966,7 @@
 				60BB1EAF1C4733A9007D8F51 /* UIImage+GIF.m in Sources */,
 				60BB1E971C4733A9007D8F51 /* MJChiBaoZiFooter.m in Sources */,
 				60BB1ECF1C473685007D8F51 /* UIColor+Extension.m in Sources */,
+				04A2F7591C4933040064DB98 /* RegisterTouView.m in Sources */,
 				60BB1EA71C4733A9007D8F51 /* SDImageCache.m in Sources */,
 				60BB1EAA1C4733A9007D8F51 /* SDWebImageDownloader.m in Sources */,
 				60BB1E751C4733A9007D8F51 /* AFURLRequestSerialization.m in Sources */,
@@ -971,11 +1013,13 @@
 				60BB1E7D1C4733A9007D8F51 /* UIProgressView+AFNetworking.m in Sources */,
 				60BB1EDB1C4739A4007D8F51 /* UINavigationItem+BackItem.m in Sources */,
 				60BB1EA81C4733A9007D8F51 /* SDWebImageCompat.m in Sources */,
+				04A2F7601C49333C0064DB98 /* RegisterWeiView.m in Sources */,
 				60BB1EA51C4733A9007D8F51 /* MKAnnotationView+WebCache.m in Sources */,
 				60BB1E831C4733A9007D8F51 /* MASLayoutConstraint.m in Sources */,
 				60BB1E9E1C4733A9007D8F51 /* MJRefreshConst.m in Sources */,
 				60BB1E921C4733A9007D8F51 /* MJRefreshBackNormalFooter.m in Sources */,
 				60BB1E711C4733A9007D8F51 /* AFHTTPSessionManager.m in Sources */,
+				04A2F75D1C49332C0064DB98 /* RegisterZhongView.m in Sources */,
 				043C7F8E1C48967000B7DE5A /* PKLeftweiView.m in Sources */,
 				60BB1E8A1C4733A9007D8F51 /* MJRefreshBackFooter.m in Sources */,
 				60BB1E851C4733A9007D8F51 /* MASViewConstraint.m in Sources */,
@@ -986,6 +1030,8 @@
 				60BB1E941C4733A9007D8F51 /* MJRefreshGifHeader.m in Sources */,
 				60BB1EA31C4733A9007D8F51 /* RESideMenu.m in Sources */,
 				60BB1E881C4733A9007D8F51 /* View+MASAdditions.m in Sources */,
+				04A2F7561C49325E0064DB98 /* RegisterViewController.m in Sources */,
+				04A2F7521C49261D0064DB98 /* PKLoginHeadView.m in Sources */,
 				60BB1E991C4733A9007D8F51 /* MJChiBaoZiHeader.m in Sources */,
 				60BB1EA11C4733A9007D8F51 /* UIView+MJExtension.m in Sources */,
 				60BB1E9B1C4733A9007D8F51 /* MJDIYBackFooter.m in Sources */,

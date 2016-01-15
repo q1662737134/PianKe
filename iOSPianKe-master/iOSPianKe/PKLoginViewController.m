@@ -9,10 +9,14 @@
 #import "PKLoginViewController.h"
 #import "Masonry.h"
 #import "PKLoginWeiView.h"
+#import "PKLoginView.h"
+#import "PKLoginHeadView.h"
 
 @interface PKLoginViewController ()
 
 @property (strong, nonatomic) PKLoginWeiView                * loginWeiView;
+@property (strong, nonatomic) PKLoginView                   * longinView;
+@property (strong, nonatomic) PKLoginHeadView               * loginHeadView;
 
 @end
 
@@ -22,16 +26,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    
-    UIButton * btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    btn.frame = CGRectMake(10, 30, 40, 20);
-    btn.backgroundColor = [UIColor yellowColor];
-    [btn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
-    [self.view addSubview:btn];
-    
     [self.view addSubview:self.loginWeiView];
+    [self.view addSubview:self.longinView];
+    [self.view addSubview:self.loginHeadView];
     [self loginYueshu];
+    
+    [self.loginHeadView.fanhuiBtn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
     
 }
 
@@ -43,10 +43,38 @@
         make.right.equalTo(ws.view.mas_right);
         make.bottom.equalTo(ws.view.mas_bottom);
     }];
+    [_longinView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(ws.loginWeiView.mas_top);
+        make.left.equalTo(ws.view.mas_left);
+        make.right.equalTo(ws.view.mas_right);
+        make.height.equalTo(@180);
+    }];
+    [_loginHeadView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.view.mas_top).offset(20);
+        make.left.equalTo(ws.view.mas_left);
+        make.right.equalTo(ws.view.mas_right);
+        make.height.equalTo(@200);
+    }];
 }
 
 - (void)btnClick{
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (PKLoginHeadView *)loginHeadView{
+    if (!_loginHeadView) {
+        _loginHeadView = [[PKLoginHeadView alloc]init];
+//        _loginHeadView.backgroundColor = [UIColor cyanColor];
+    }
+    return _loginHeadView;
+}
+
+- (PKLoginView *)longinView{
+    if (!_longinView) {
+        _longinView = [[PKLoginView alloc]init];
+//        _longinView.backgroundColor = [UIColor cyanColor];
+    }
+    return _longinView;
 }
 
 - (PKLoginWeiView *)loginWeiView{
