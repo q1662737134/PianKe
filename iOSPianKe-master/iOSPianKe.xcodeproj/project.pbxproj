@@ -14,6 +14,9 @@
 		043C7F881C47A15800B7DE5A /* PKLeftTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F871C47A15800B7DE5A /* PKLeftTableView.m */; };
 		043C7F8B1C487ECB00B7DE5A /* PKLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F8A1C487ECB00B7DE5A /* PKLeftTableViewCell.m */; };
 		043C7F8E1C48967000B7DE5A /* PKLeftweiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F8D1C48967000B7DE5A /* PKLeftweiView.m */; };
+		043C7F941C48D17700B7DE5A /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F931C48D17700B7DE5A /* PKLoginViewController.m */; };
+		043C7F981C48D1E100B7DE5A /* PKLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F971C48D1E100B7DE5A /* PKLoginView.m */; };
+		043C7F9E1C48D68500B7DE5A /* PKLoginWeiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */; };
 		60BB1D961C473118007D8F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB1D951C473118007D8F51 /* main.m */; };
 		60BB1D991C473118007D8F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BB1D981C473118007D8F51 /* AppDelegate.m */; };
 		60BB1D9F1C473118007D8F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BB1D9D1C473118007D8F51 /* Main.storyboard */; };
@@ -136,6 +139,12 @@
 		043C7F8A1C487ECB00B7DE5A /* PKLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftTableViewCell.m; sourceTree = "<group>"; };
 		043C7F8C1C48967000B7DE5A /* PKLeftweiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLeftweiView.h; sourceTree = "<group>"; };
 		043C7F8D1C48967000B7DE5A /* PKLeftweiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftweiView.m; sourceTree = "<group>"; };
+		043C7F921C48D17700B7DE5A /* PKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLoginViewController.h; sourceTree = "<group>"; };
+		043C7F931C48D17700B7DE5A /* PKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginViewController.m; sourceTree = "<group>"; };
+		043C7F961C48D1E100B7DE5A /* PKLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLoginView.h; sourceTree = "<group>"; };
+		043C7F971C48D1E100B7DE5A /* PKLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginView.m; sourceTree = "<group>"; };
+		043C7F9C1C48D68500B7DE5A /* PKLoginWeiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKLoginWeiView.h; path = ../PKLoginWeiView.h; sourceTree = "<group>"; };
+		043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKLoginWeiView.m; path = ../PKLoginWeiView.m; sourceTree = "<group>"; };
 		60BB1D911C473118007D8F51 /* iOSPianKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPianKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BB1D951C473118007D8F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60BB1D971C473118007D8F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -388,8 +397,32 @@
 		043C7F8F1C48C7F300B7DE5A /* other */ = {
 			isa = PBXGroup;
 			children = (
+				60BB1EE21C4745E8007D8F51 /* PrefixHeader.pch */,
+				60BB1D971C473118007D8F51 /* AppDelegate.h */,
+				60BB1D981C473118007D8F51 /* AppDelegate.m */,
 			);
 			name = other;
+			sourceTree = "<group>";
+		};
+		043C7F911C48D13600B7DE5A /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				043C7F921C48D17700B7DE5A /* PKLoginViewController.h */,
+				043C7F931C48D17700B7DE5A /* PKLoginViewController.m */,
+				043C7F951C48D17D00B7DE5A /* view */,
+			);
+			name = "登录";
+			sourceTree = "<group>";
+		};
+		043C7F951C48D17D00B7DE5A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				043C7F961C48D1E100B7DE5A /* PKLoginView.h */,
+				043C7F971C48D1E100B7DE5A /* PKLoginView.m */,
+				043C7F9C1C48D68500B7DE5A /* PKLoginWeiView.h */,
+				043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		60BB1D881C473118007D8F51 = {
@@ -415,10 +448,8 @@
 		60BB1D931C473118007D8F51 /* iOSPianKe */ = {
 			isa = PBXGroup;
 			children = (
+				043C7F911C48D13600B7DE5A /* 登录 */,
 				043C7F8F1C48C7F300B7DE5A /* other */,
-				60BB1EE21C4745E8007D8F51 /* PrefixHeader.pch */,
-				60BB1D971C473118007D8F51 /* AppDelegate.h */,
-				60BB1D981C473118007D8F51 /* AppDelegate.m */,
 				043C7F7A1C47768A00B7DE5A /* 首页 */,
 				043C7F761C4775A600B7DE5A /* 左侧菜单 */,
 				60BB1EBD1C473685007D8F51 /* 工具类 */,
@@ -825,6 +856,7 @@
 				TargetAttributes = {
 					60BB1D901C473118007D8F51 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZVGVZ6M22S;
 					};
 					60BB1DA91C473118007D8F51 = {
 						CreatedOnToolsVersion = 7.2;
@@ -932,6 +964,7 @@
 				60BB1E871C4733A9007D8F51 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				60BB1E821C4733A9007D8F51 /* MASConstraintMaker.m in Sources */,
 				60BB1ECE1C473685007D8F51 /* NSString+Helper.m in Sources */,
+				043C7F9E1C48D68500B7DE5A /* PKLoginWeiView.m in Sources */,
 				60BB1EB31C4733A9007D8F51 /* UIImageView+WebCache.m in Sources */,
 				60BB1EDE1C473A2F007D8F51 /* UIBarButtonItem+Helper.m in Sources */,
 				60BB1D991C473118007D8F51 /* AppDelegate.m in Sources */,
@@ -963,6 +996,8 @@
 				60BB1E7E1C4733A9007D8F51 /* UIRefreshControl+AFNetworking.m in Sources */,
 				60BB1E7F1C4733A9007D8F51 /* UIWebView+AFNetworking.m in Sources */,
 				60BB1ECC1C473685007D8F51 /* GCDCountdownTime.m in Sources */,
+				043C7F941C48D17700B7DE5A /* PKLoginViewController.m in Sources */,
+				043C7F981C48D1E100B7DE5A /* PKLoginView.m in Sources */,
 				60BB1E721C4733A9007D8F51 /* AFNetworkReachabilityManager.m in Sources */,
 				60BB1E961C4733A9007D8F51 /* MJRefreshStateHeader.m in Sources */,
 				60BB1EA91C4733A9007D8F51 /* SDWebImageDecoder.m in Sources */,
@@ -1119,6 +1154,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOSPianKe/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSPianKe/Info.plist;
@@ -1134,6 +1170,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOSPianKe/PrefixHeader.pch;
 				INFOPLIST_FILE = iOSPianKe/Info.plist;

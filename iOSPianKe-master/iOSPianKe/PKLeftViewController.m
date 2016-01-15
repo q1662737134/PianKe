@@ -10,6 +10,7 @@
 #import "PKLeftHeadView.h"
 #import "PKLeftTableView.h"
 #import "PKLeftweiView.h"
+#import "PKLoginViewController.h"
 
 @interface PKLeftViewController ()
 
@@ -30,6 +31,14 @@
     [self.view addSubview:self.leftTableView];
     [self.view addSubview:self.leftWeiView];
     [self addAutoLayout];
+    
+    [self.leftheadView.userNameBtn addTarget:self action:@selector(loginClick) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.leftheadView.iconImageBtn addTarget:self action:@selector(loginClick) forControlEvents:(UIControlEventTouchUpInside)];
+}
+
+- (void)loginClick{
+    PKLoginViewController * vc = [[PKLoginViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)addAutoLayout{

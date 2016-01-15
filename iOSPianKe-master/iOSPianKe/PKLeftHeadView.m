@@ -86,7 +86,6 @@
         _userNameBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
         [_userNameBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
         [_userNameBtn setTitle:@"登录丨注册" forState:(UIControlStateNormal)];
-//        _userNameBtn.backgroundColor = [UIColor blueColor];
         _userNameBtn.contentHorizontalAlignment = 1;
     }
     return _userNameBtn;
@@ -131,6 +130,5 @@
     }
     return _searchbtn;
 }
-
 
 @end
