@@ -11,6 +11,7 @@
 #import "PKLoginWeiView.h"
 #import "PKLoginView.h"
 #import "PKLoginHeadView.h"
+#import "RegisterViewController.h"
 
 @interface PKLoginViewController ()
 
@@ -32,6 +33,7 @@
     [self loginYueshu];
     
     [self.loginHeadView.fanhuiBtn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.loginHeadView.zhuceBtn addTarget:self action:@selector(zhuceClick) forControlEvents:(UIControlEventTouchUpInside)];
     
 }
 
@@ -57,6 +59,12 @@
     }];
 }
 
+- (void)zhuceClick{
+    RegisterViewController * vc = [[RegisterViewController alloc]init];
+//    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 - (void)btnClick{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -64,7 +72,6 @@
 - (PKLoginHeadView *)loginHeadView{
     if (!_loginHeadView) {
         _loginHeadView = [[PKLoginHeadView alloc]init];
-//        _loginHeadView.backgroundColor = [UIColor cyanColor];
     }
     return _loginHeadView;
 }
@@ -72,7 +79,6 @@
 - (PKLoginView *)longinView{
     if (!_longinView) {
         _longinView = [[PKLoginView alloc]init];
-//        _longinView.backgroundColor = [UIColor cyanColor];
     }
     return _longinView;
 }
@@ -80,7 +86,6 @@
 - (PKLoginWeiView *)loginWeiView{
     if (!_loginWeiView) {
         _loginWeiView = [[PKLoginWeiView alloc]init];
-//        _loginWeiView.backgroundColor = [UIColor cyanColor];
     }
     return _loginWeiView;
 }

@@ -28,7 +28,7 @@
     [_fanhuiBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(ws.mas_top).offset(10);
         make.left.equalTo(ws.mas_left).offset(10);
-        make.size.equalTo(CGSizeMake(20, 20));
+        make.size.equalTo(CGSizeMake(15, 15));
     }];
     [_zhuceBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(ws.fanhuiBtn.mas_centerY);

@@ -11,7 +11,6 @@
 
 @interface RegisterWeiView : UIView
 
-@property (strong, nonatomic) UIButton              * wanchengBtn;
 @property (strong, nonatomic) UIButton              * xieyiBtn;
 @property (strong, nonatomic) UILabel               * tishiLbl;
 
