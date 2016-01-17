@@ -14,6 +14,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self addSubview:self.nanBtn];
+        [self addSubview:self.nvBtn];
         [self addSubview:self.nichengLbl];
         [self addSubview:self.youxiangLbl];
         [self addSubview:self.mimaLbl];
@@ -32,17 +34,17 @@
 - (void)registerZhongViewLayout{
     WS(ws);
     [_nichengLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.mas_top).offset(20);
+        make.top.equalTo(ws.mas_top).offset(60);
         make.left.equalTo(ws.mas_left).offset(40);
         make.size.equalTo(CGSizeMake(45, 15));
     }];
     [_youxiangLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.nichengLbl.mas_bottom).offset(40);
+        make.top.equalTo(ws.nichengLbl.mas_bottom).offset(30);
         make.left.equalTo(ws.mas_left).offset(40);
         make.size.equalTo(CGSizeMake(45, 15));
     }];
     [_mimaLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.youxiangLbl.mas_bottom).offset(40);
+        make.top.equalTo(ws.youxiangLbl.mas_bottom).offset(30);
         make.left.equalTo(ws.mas_left).offset(40);
         make.size.equalTo(CGSizeMake(45, 15));
     }];
@@ -86,7 +88,17 @@
         make.top.equalTo(ws.label3.mas_bottom).offset(30);
         make.centerX.equalTo(ws.label3.mas_centerX);
         make.width.equalTo(ws.label3.mas_width);
-        make.height.equalTo(@50);
+        make.height.equalTo(@40);
+    }];
+    [_nanBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(ws.mas_centerX).offset(-30);
+        make.bottom.equalTo(ws.nichengLbl.mas_top).offset(-30);
+        make.size.equalTo(CGSizeMake(60, 30));
+    }];
+    [_nvBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(ws.nanBtn.mas_centerY);
+        make.left.equalTo(ws.nanBtn.mas_right).offset(60);
+        make.size.equalTo(CGSizeMake(60, 30));
     }];
 }
 
@@ -161,6 +173,7 @@
     if (!_mimaText) {
         _mimaText = [[UITextField alloc]init];
         _mimaText.borderStyle = UITextBorderStyleNone;
+        _mimaText.secureTextEntry = YES;
     }
     return _mimaText;
 }
@@ -176,5 +189,20 @@
     return _wanchengBtn;
 }
 
+- (UIButton *)nanBtn{
+    if (!_nanBtn) {
+        _nanBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        [_nanBtn setBackgroundImage:[UIImage imageNamed:@"男"] forState:(UIControlStateNormal)];
+    }
+    return _nanBtn;
+}
+
+- (UIButton *)nvBtn{
+    if (!_nvBtn) {
+        _nvBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        [_nvBtn setBackgroundImage:[UIImage imageNamed:@"女"] forState:(UIControlStateNormal)];
+    }
+    return _nvBtn;
+}
 
 @end

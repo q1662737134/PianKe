@@ -49,13 +49,13 @@
         make.bottom.equalTo(ws.registerWeiView.mas_top);
         make.left.equalTo(ws.view.mas_left);
         make.right.equalTo(ws.view.mas_right);
-        make.height.equalTo(@250);
+        make.height.equalTo(@260);
     }];
     [_registerWeiView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(ws.view.mas_left);
         make.right.equalTo(ws.view.mas_right);
         make.bottom.equalTo(ws.view.mas_bottom);
-        make.height.equalTo(@80);
+        make.height.equalTo(@60);
     }];
 }
 

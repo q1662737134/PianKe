@@ -11,6 +11,8 @@
 
 @interface RegisterZhongView : UIView
 
+@property (strong, nonatomic) UIButton              * nanBtn;
+@property (strong, nonatomic) UIButton              * nvBtn;
 @property (strong, nonatomic) UILabel               * nichengLbl;
 @property (strong, nonatomic) UILabel               * youxiangLbl;
 @property (strong, nonatomic) UILabel               * mimaLbl;

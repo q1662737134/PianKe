@@ -117,6 +117,7 @@
     if (!_mimaText) {
         _mimaText = [[UITextField alloc]init];
         _mimaText.borderStyle = UITextBorderStyleNone;
+        _mimaText.secureTextEntry = YES;
     }
     return _mimaText;
 }

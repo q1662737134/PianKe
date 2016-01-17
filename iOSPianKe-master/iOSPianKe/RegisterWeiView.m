@@ -24,7 +24,7 @@
 - (void)registerWeiViewLayout{
     WS(ws);
     [_tishiLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@30);
+        make.bottom.equalTo(ws.mas_bottom).offset(-30);
         make.left.equalTo(ws.mas_left).offset(30);
         make.right.equalTo(ws.xieyiBtn.mas_left);
         make.height.equalTo(@15);
