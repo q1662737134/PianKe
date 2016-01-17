@@ -41,9 +41,9 @@
         make.right.equalTo(weakSelf.mas_right).offset(-60);
         make.centerY.equalTo(weakSelf.iconImageBtn.mas_centerY);
     }];
-    CGFloat width = (VIEW_WIDTH-125.0)/5.0;
+    CGFloat width = (VIEW_WIDTH-(VIEW_WIDTH/2-75)-80)/3;
     [_downBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(weakSelf.mas_left).offset(width);
+        make.left.equalTo(weakSelf.searchbtn.mas_left);
         make.size.equalTo(CGSizeMake(20, 20));
         make.top.equalTo(weakSelf.iconImageBtn.mas_bottom).offset(25);
     }];
@@ -58,17 +58,18 @@
         make.centerY.equalTo(weakSelf.collecBtn.mas_centerY);
     }];
     [_writeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(weakSelf.messageBtn.mas_right).offset(width);
+        make.right.equalTo(weakSelf.searchbtn.mas_right);
         make.size.equalTo(CGSizeMake(20, 20));
         make.centerY.equalTo(weakSelf.messageBtn.mas_centerY);
     }];
     
     [_searchbtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.messageBtn.mas_bottom).offset(15);
-        make.left.equalTo(weakSelf.mas_left).offset(25);
-        make.right.equalTo(weakSelf.mas_right).offset(-70);
+        make.left.equalTo(weakSelf.mas_left).offset(30);
+        make.right.equalTo(weakSelf.mas_right).offset(-(VIEW_WIDTH/2-95));
         make.height.equalTo(30);
     }];
+    
 }
 
 -(UIButton *)iconImageBtn{

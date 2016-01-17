@@ -150,6 +150,7 @@
 		043C7F971C48D1E100B7DE5A /* PKLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginView.m; sourceTree = "<group>"; };
 		043C7F9C1C48D68500B7DE5A /* PKLoginWeiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKLoginWeiView.h; path = ../PKLoginWeiView.h; sourceTree = "<group>"; };
 		043C7F9D1C48D68500B7DE5A /* PKLoginWeiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKLoginWeiView.m; path = ../PKLoginWeiView.m; sourceTree = "<group>"; };
+		0441EB861C4B9E34006CBDA6 /* PKURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKURL.h; sourceTree = "<group>"; };
 		04A2F7501C49261D0064DB98 /* PKLoginHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLoginHeadView.h; sourceTree = "<group>"; };
 		04A2F7511C49261D0064DB98 /* PKLoginHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginHeadView.m; sourceTree = "<group>"; };
 		04A2F7541C49325E0064DB98 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -415,6 +416,7 @@
 				60BB1EE21C4745E8007D8F51 /* PrefixHeader.pch */,
 				60BB1D971C473118007D8F51 /* AppDelegate.h */,
 				60BB1D981C473118007D8F51 /* AppDelegate.m */,
+				0441EB861C4B9E34006CBDA6 /* PKURL.h */,
 			);
 			name = other;
 			sourceTree = "<group>";

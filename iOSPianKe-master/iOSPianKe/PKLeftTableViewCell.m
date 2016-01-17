@@ -27,7 +27,7 @@
 - (void)yueshu{
     WS(weakSelf);
     [self.imagepk mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(weakSelf.mas_left).offset(20);
+        make.left.equalTo(weakSelf.mas_left).offset(30);
         make.size.equalTo(CGSizeMake(20, 20));
         make.centerY.equalTo(weakSelf.mas_centerY);
     }];

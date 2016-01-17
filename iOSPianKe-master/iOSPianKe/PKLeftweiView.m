@@ -40,7 +40,7 @@
     }];
     [_startBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(CGSizeMake(20, 20));
-        make.right.equalTo(ws.mas_right).offset(-60);
+        make.right.equalTo(ws.mas_right).offset(-(VIEW_WIDTH/2-75));
         make.centerY.equalTo(ws.mas_centerY);
     }];
     [_musicName mas_makeConstraints:^(MASConstraintMaker *make) {
