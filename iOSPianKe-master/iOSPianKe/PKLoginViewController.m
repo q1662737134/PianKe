@@ -13,7 +13,7 @@
 #import "PKLoginHeadView.h"
 #import "RegisterViewController.h"
 
-@interface PKLoginViewController ()
+@interface PKLoginViewController ()<UITextFieldDelegate>
 
 @property (strong, nonatomic) PKLoginWeiView                * loginWeiView;
 @property (strong, nonatomic) PKLoginView                   * longinView;
@@ -79,6 +79,8 @@
 - (PKLoginView *)longinView{
     if (!_longinView) {
         _longinView = [[PKLoginView alloc]init];
+        _longinView.zhanghaoText.delegate = self;
+        _longinView.mimaText.delegate = self;
     }
     return _longinView;
 }
@@ -88,6 +90,39 @@
         _loginWeiView = [[PKLoginWeiView alloc]init];
     }
     return _loginWeiView;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    WS(ws);
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect rect = ws.view.bounds;
+        rect.origin.y = 40;
+        ws.view.bounds = rect;
+    }];
+    return YES;
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [_longinView.zhanghaoText resignFirstResponder];
+    [_longinView.mimaText resignFirstResponder];
+    WS(ws);
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect rect = ws.view.bounds;
+        rect.origin.y = 0;
+        ws.view.bounds = rect;
+    }];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [_longinView.zhanghaoText resignFirstResponder];
+    [_longinView.mimaText resignFirstResponder];
+    WS(ws);
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect rect = ws.view.bounds;
+        rect.origin.y = 0;
+        ws.view.bounds = rect;
+    }];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

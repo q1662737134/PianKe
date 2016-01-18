@@ -9,7 +9,7 @@
 #ifndef PKURL_h
 #define PKURL_h
 
-#define LOGIN_URL @"http://api2.pianke.me/user/login";
+#define LOGIN_URL @"http://api2.pianke.me/user/login"
 
 
 #endif /* PKURL_h */

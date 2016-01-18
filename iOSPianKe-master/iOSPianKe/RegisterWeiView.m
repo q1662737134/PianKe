@@ -41,7 +41,7 @@
         _xieyiBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
         [_xieyiBtn setTitle:@"片刻协议" forState:(UIControlStateNormal)];
         _xieyiBtn.titleLabel.font = [UIFont systemFontOfSize:11];
-        [_xieyiBtn setTitleColor:RGB(140, 200, 125) forState:(UIControlStateNormal)];
+        [_xieyiBtn setTitleColor:RGB(120, 180, 70) forState:(UIControlStateNormal)];
     }
     return _xieyiBtn;
 }

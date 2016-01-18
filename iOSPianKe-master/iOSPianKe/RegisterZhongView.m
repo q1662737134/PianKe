@@ -193,6 +193,7 @@
     if (!_nanBtn) {
         _nanBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
         [_nanBtn setBackgroundImage:[UIImage imageNamed:@"男"] forState:(UIControlStateNormal)];
+        _nanBtn.adjustsImageWhenHighlighted = NO;
     }
     return _nanBtn;
 }
@@ -201,6 +202,7 @@
     if (!_nvBtn) {
         _nvBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
         [_nvBtn setBackgroundImage:[UIImage imageNamed:@"女"] forState:(UIControlStateNormal)];
+        _nvBtn.adjustsImageWhenHighlighted = NO;
     }
     return _nvBtn;
 }

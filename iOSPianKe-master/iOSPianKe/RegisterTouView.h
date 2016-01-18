@@ -13,5 +13,6 @@
 
 @property (strong, nonatomic) UIButton              * fanhuiBtn;
 @property (strong, nonatomic) UIButton              * touxiangBtn;
+@property (strong, nonatomic) UIImageView              * xiangjiImage;
 
 @end
